@@ -1,8 +1,20 @@
-//GENERADOR DE TABLA
+const banco = prompt("Ingrese su banco")
+const monto = Number(prompt("Ingrese monto del prestamo deseado"))
 
-let numeroIngresado = Number( prompt("Ingrese un numero del 1 al 10") )
+let interes
 
-for (let i = 1; i <=10; i++){
-    console.log(i * numeroIngresado)
-} 
+switch (banco) {    
+    case "Santander Rio":
+        interes = 1.12
+        break
+    case "Galicia":
+        interes = 2.40
+        break
+    case "Nacion":
+        interes = 1.90
+        break
+    default:
+        alert("No ingresaste un banco válido")
+}
 
+alert ("Tu monto a devolver al banco" +" " + banco + " es de " + monto * interes)
