@@ -17,4 +17,16 @@ switch (banco) {
         alert("No ingresaste un banco válido")
 }
 
-alert ("Tu monto a devolver al banco" +" " + banco + " es de " + monto * interes)
+function SumarIntereses() {
+    alert ("Tu monto a devolver al banco" +" " + banco + " es de " + monto * interes)
+}
+
+SumarIntereses()
+
+let continuar = prompt("¿Desea continuar?")
+
+while (continuar === "No") {
+    alert("Muchas gracias por su visita")
+
+    usuario = prompt("Ingrese el banco por el cual quiere consultar") 
+} 
