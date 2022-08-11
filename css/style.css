@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-size: 50px;
+}
+:hover  h1{
+    color: coral;
+}
+
+.container{
+    display: flex;
+}
+
+.titulo{
+    size: 30px;
+}
+
+.bancos{
+    margin: 20px;
+}
+
+.valorPrestamo{
+    margin: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}

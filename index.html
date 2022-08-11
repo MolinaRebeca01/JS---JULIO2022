@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>SIMULADOR INTERACTIVO</h1>
+    <h1>PRESTAMOS BANCARIOS</h1>
     <hr>
+
+<div class="container">
+    <div class="bancos">
+        <label class="titulo" for="text">¿Que banco desea consultar?</label>
+        <input type="text" multiple name="text" list="drawfemails" required size="64">
+        <datalist id="drawfemails">
+            <option value="Santander Rio"></option>
+            <option value="Galicia"></option>
+            <option value="Nacion"></option>
+        </datalist>
+    </div>
+
+    <div class="valorPrestamo">
+        <label class="titulo" for="number">¿Cuánto dinero necesita?</label>
+        <input type="number" name="pretamo solicitado">
+    </div>
+</div>
+
+    <div class="btn">
+    <button type="submit" >Consultar</button>
+    </div>
+
+    <div>
+        <h2>DINERO A DEVOLVER</h2>
+    </div>
+
+    <div>
+        <h3>Porcentaje de interés</h3>
+    </div>
+
     <script src="app.js"></script>
 </body>
+
 </html>
